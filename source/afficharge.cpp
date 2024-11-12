@@ -12,7 +12,7 @@ int longueur(const char* chaine){
 }
 
 std::string MotAleatoire() {
-    std::string mots[] = {"PROGRAMMATION", "JEUX", "VIDEO", "ELDEN", "CONSOLE", "CODE", "C++"};
+    std::string mots[] = {"PROGRAMMATION", "JEUX", "VIDEO", "ELDEN", "CONSOLE", "CODE", "C++", "DARKSOUL", "BLOODBORNE"};
     int nombreDeMots = sizeof(mots) / sizeof(mots[0]);
 
     srand(time(0));
