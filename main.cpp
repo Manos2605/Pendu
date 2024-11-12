@@ -14,10 +14,10 @@ int main() {
         //int tentativesMax = tentativesRestantes;
         char lettre;
 
-        std::cout << "Bienvenue sur le jeu vidéo du Pendu" << std::endl;
+        std::cout << "Bienvenue sur le jeu video du Pendu" << std::endl;
 
         while (tentativesRestantes > 0 && !Victoire(lettresTrouvees, tailleMot)) {
-            std::cout << "\nMot à découvrir : ";
+            std::cout << "\nMot a decouvrir : ";
             afficherMot(mot, lettresTrouvees, tailleMot);
             afficherPendu(tentativesRestantes);
             //BarreDeVie(tentativesRestantes, tentativesMax)
@@ -47,11 +47,11 @@ int main() {
         }
 
         if (Victoire(lettresTrouvees, tailleMot)) {
-            std::cout << "\nWIN ! Mot trouvé : " << mot << std::endl;
+            std::cout << "\nWIN ! Mot trouver : " << mot << std::endl;
             score++;
         } else {
             afficherPendu(tentativesRestantes);
-            std::cout << "\nGAME OVER. Le mot était : " << mot << std::endl;
+            std::cout << "\nGAME OVER. Le mot cacher est : " << mot << std::endl;
         }
 
         std::cout << "\nScore actuel : " << score << std::endl;
