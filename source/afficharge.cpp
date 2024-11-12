@@ -39,16 +39,23 @@ bool Victoire(const bool lettres[], int taille) {
 }
 
 void afficherPendu(int tentatives) {
-    std::string etatsPendu[] = {
-        "   +---+\n   |   |\n       |\n       |\n       |\n       |\n=========\n",
-        "   +---+\n   |   |\n   O   |\n       |\n       |\n       |\n=========\n",
-        "   +---+\n   |   |\n   O   |\n   |   |\n       |\n       |\n=========\n",
-        "   +---+\n   |   |\n   O   |\n  /|   |\n       |\n       |\n=========\n",
-        "   +---+\n   |   |\n   O   |\n  /|\\  |\n       |\n       |\n=========\n",
-        "   +---+\n   |   |\n   O   |\n  /|\\  |\n  /    |\n       |\n=========\n",
-        "   +---+\n   |   |\n   O   |\n  /|\\  |\n  / \\  |\n       |\n=========\n"
-    };
-    std::cout << etatsPendu[6 - tentatives] << std::endl;
+    if (tentatives == 6) {
+        std::cout << "   +---+\n   |   |\n       |\n       |\n       |\n       |\n=========\n";
+    } else if (tentatives == 5) {
+        std::cout << "   +---+\n   |   |\n   O   |\n       |\n       |\n       |\n=========\n";
+    } else if (tentatives == 4) {
+        std::cout << "   +---+\n   |   |\n   O   |\n   |   |\n       |\n       |\n=========\n";
+    } else if (tentatives == 3) {
+        std::cout << "   +---+\n   |   |\n   O   |\n  /|   |\n       |\n       |\n=========\n";
+    } else if (tentatives == 2) {
+        std::cout << "   +---+\n   |   |\n   O   |\n  /|\\  |\n       |\n       |\n=========\n";
+    } else if (tentatives == 1) {
+        std::cout << "   +---+\n   |   |\n   O   |\n  /|\\  |\n  /    |\n       |\n=========\n";
+    } else if (tentatives == 0) {
+        std::cout << "   +---+\n   |   |\n   O   |\n  /|\\  |\n  / \\  |\n       |\n=========\n";
+    } else {
+        std::cout << "   +---+\n   |   |\n   O   |\n  /|\\  |\n  / \\  |\n   |   |\n=========\n";
+    }
 }
 
 void BarreDeVie(int tentatives, int tentativesMax) {
