@@ -7,7 +7,7 @@ Ce jeu du Pendu est un projet simple en C++ sans utilisation de bibliothèques s
 Il propose un mot aléatoire que le joueur doit deviner en un nombre limité de tentatives. 
 Le jeu affiche une barre de vie qui représente les points de vie restants du joueur, ainsi qu'une représentation du pendu à chaque tentative.
 Vidéo de présentation : 
-- **X** :
+- **X** : https://x.com/Sonwa_Dimitry/status/1856271641212260462
 - **Linkedln** :
 
 ## Fonctionnalités
